@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8" >
+        <meta lang="en">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="description" content="Find the best jacket for your outdoor activities">
+        <link href="../css/index.css" rel="stylesheet">
+        <script
+      src="https://kit.fontawesome.com/f55b09a11a.js"
+      crossorigin="anonymous"
+    ></script>
+        <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet"> 
+        <title>RainyDays ⎮ Checkout</title>
+    </head>
+    <body>
+        <header class="nav_around">
+            <a href="../index.html"><img src="../images/RainyDays_Logo.png" alt="Logo of the website RainyDays" class="logo"> </a> 
+            <nav class="nav">
+                <ul>
+                    <li> <a href="../index.html"> HOME </a> </li>
+                    <li> <a href="products.html"> PRODUCTS </a></li>
+                    <li> <a href="../about.html"> ABOUT US </a></li>
+                    <li> <a href="../contact.html"> CONTACT </a></li>
+                    <li> <a href="products/checkout.html" class="active"> SHOPPING CART </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="checkout_container">
+            <section>
+                <img src="../images/RainyDays_Jacket1.png" alt="Product Jacket bought">
+            </section>
+            <section class="checkout_display">
+                <div  >
+                     <form action="submit.php" method="POST">
+                     <label>Name*</label><br>
+                     <input type="text" name="name" class="box"><br>
+                    <label>E-mail*</label><br>
+                    <input type="text" name="email" class="box"><br>
+                    <label>Address*</label><br>
+                    <input type="text" name="address" class="box"><br>
+                    <label>Zip Code, City, Country*</label><br>
+                    <input type="text" name="address-additional" class="box"><br>
+                <p><label for="delivery">Delivery</label></p>
+                    <select name="delivery" id="delivery">
+                        <option value="outlet"> At our retail outleet / Free </option>
+                        <option value="box"> Pick up box / 49kr </option>
+                        <option value="door"> At your door / 79kr </option>    
+                     </select>
+                <p>Card Information</p>
+                <form action="submit.php" method="POST">
+                    <label>Card Number*</label><br>
+                    <input type="text" name="card" class="box"><br>
+                    <label>Date*</label><br>
+                    <input type="text" name="date" class="box"><br>
+                    <label>CVC*</label><br>
+                    <input type="text" name="cvc" class="box"><br>
+                    <button class="cta_button payment"> <a href="succes.html">Proceed with payment</a> </button>            
+                </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section>
+          
+                <p>Contact Us</p>
+                <p><i class="fa-solid fa-envelope"></i> cstmservice@rainydays.com</p>
+                <p><i class="fa-solid fa-phone"></i> +47 123 45 455</p>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i> Fredrikstenveien 14, 5386
+                  Oslo
+                </p>
+              
+            </section>
+            <section>
+              <p>More info</p>
+              <p><a href="../extra pages/payment.html">Payment</a></p>
+              <p><a href="../extra pages/delivery.html">Delivery</a></p>
+              <p><a href="../extra pages/return.html">Return policy</a></p>
+            </section>
+            <div>
+              <p>Find us on social media</p>
+              <p class="social_media"> <a href="../extra pages/instagram.html"> <img src="/images/Instagram.png" alt="instagram logo" class="sm_logo"></a><a href="../extra pages/facebook.html" ><img src="/images/facebook.png" alt="facebook logo" class="sm_logo"></a><a href="../extra pages/snapchat.html"><img src="/images/Snapchat.png" alt="snapchat Logo" class="sm_logo"></p></a>
+              <p>Sign up for newsletter</p>
+              <input type="text" name="email" id="newsletter__email" />
+              <p><a href="../extra pages/submited.html"><button id="submit">Submit</button></a></p>
+            </div>
+          </footer>
+    </body>
+</html>
+
 
