@@ -35,6 +35,7 @@ nav {
 }
 
 
+
 nav ul {
     padding: 0px;
     background-color: #259DB7;
@@ -69,7 +70,7 @@ nav ul a {
         height: 30vh;
         width: 80%;
         padding: 20px;
-        margin: 50px;
+        margin: auto;
         }
 
 header div {
@@ -160,7 +161,7 @@ header div {
    
 /* Buttons */
 
-    .cta_button { 
+.cta_button { 
         background-color: #259DB7;
         border-radius: 15px;
         font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -359,27 +360,20 @@ nav {
 
 
 /* CONTACT PAGE */
-.contact_page h1 {
-    grid-area: span 2;
-}
-
-
-
-.item {
-    text-align: left;
-    align-items: center;
-    width: 20em;
-    margin: 20px;
-    height: 150vh;
-}
 
 .container {
     display: flex;
-    justify-content: space-around;
-    margin: 50px;
-    height: 150vh;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 50px;
 }
+
+.contact_page h1 {
+    text-align: center;
+}
+
+
 
 .succes p {
     padding: 20px;
@@ -517,6 +511,28 @@ footer div {
     
     .checkout_container p {
         font-family: "Playfair Display", Arial, Helvetica, sans-serif
+    }
+
+    .contact_page h1 {
+        grid-area: span 2;
+    }
+    
+    
+    
+    .item {
+        text-align: left;
+        align-items: center;
+        width: 20em;
+        margin: 20px;
+        height: 150vh;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 50px;
+        height: 150vh;
     }
   
 } 
