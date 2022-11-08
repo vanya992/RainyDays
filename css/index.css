@@ -3,6 +3,8 @@
     src: url("../fonts/RacingSansOne-Regular.ttf") format("truetype");
 }
 
+
+
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     width: 100%;
@@ -18,168 +20,192 @@ main {
     font-size: 2.5em;
 }
 
+
 nav {
+    display: none;
     font-family: "Playfair Display", Arial, Helvetica, sans-serif;
 }
 
-.nav { 
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        background-color: #259DB7;
-        border: none;
-        border-radius: 0 0 0 15px;
-        text-align:center;
-        padding: 0px 20px;
-    }
-    
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+
 nav ul {
-        padding: 0px; 
-        width:100%;
-        margin: 20px;
-    }
-    
-nav li {
-        display: inline-block; 
-        justify-content: space-between;
-        padding: 10px;
-        margin: 10px;
-        font-size: 1.5em;
-        max-width: 100%;
-    }
+    padding: 0px;
+    background-color: #259DB7;
+}
+
+nav ul li {
+    text-align: left;
+    padding: 0px;
+}
+
     
 nav ul a {
         text-decoration: none;
     }
-    
-
-    
+  
 .active {
         text-decoration: underline;
     } 
     
-
 .header_image {
-    background-image: url("../images/homepage4-1.png");
-    background-size: 100%;
-    background-position: fixed;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 100%;
-    
-    }
+        background-image: url("../images/background/homepage4-1.png");
+        background-size: 100%;
+        background-position: fixed;
+        background-repeat: no-repeat;
+        height:80vh;
+        width: 100%;
+        margin-top: 30px;
+        }
 
 .logo_home { 
-   height: 550px;
-   width: 90%;
-   margin: 0px 20px;
-   padding: 5px 20px;
-    }
-
-
-#shopnow {
-        font-size: 2em;
-        font-family: "Raleway", Arial, Helvetica, sans-serif ;
-        background-color: #259DB7;
-        border: none;
-        border-radius: 15px;
-        padding: 10px 20px;
-        margin: 20px auto;
-        
-        
-    }
-
-.cta_button {
-        padding: 10px 30px;
-        font-size: 0.8em;
-        display: flex;
-        justify-content: center;
-        margin: 20px;
-    }
-
-.display {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        margin-top: 50px;
-        justify-content: space-between;
-    }
-
-.display_photos {
-       max-width: 1200px;
-       height: 300px;
-       padding: 10px;
-       
-    }
-
-.gray_area {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 20px 0px;
-        padding: 0px;
-        background-color: #c3c3c3;
-    }
-
-.gray_area h2 {
-        font-size: 3em;
-        font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-        text-align: center;
-    }
-
-
-.gray_area_photo {
-        max-height: 220px;
+        display: block;
+        height: 30vh;
+        width: 80%;
+        padding: 20px;
         margin: 50px;
-        border-radius: 40px;
-    }
+        }
+
+header div {
+    display: flex;
+    justify-content: center;
+}
 
 
- footer {
-        background-color: #259DB7;
-        display: flex;
-        justify-content: space-between;   
-        font-family: "Raleway", Arial, Helvetica, sans-serif;
-        font-size: 2em;
-        padding: 10px 15px;
-        margin-top: 50px;
-        border-radius: 15px 15px 0px 0px;
-    }
     
-footer div {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-.social_media {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 10px;
-    }
-
-
-
-.sm_logo {
-        height: 50px;  
-    }
-    
-
 .logo {
-        height: 70px;
-        width: auto;
-        margin: 30px;
-        position: relative;
-    }
+    height: 10vh;
+    margin: 0px auto;
+    padding: 0px auto;
+    width: auto;
+     }
+
+.first_display {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+     }
+
+.first_display h1 {
+    font-size: 2em;
+    font-weight: 50;
+}
+
+.first_display img {
+    height: 30vh;
+    width: auto;
+}
+
+.second_display {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+}
+
+.second_display img {
+    height: 30vh;
+    width: auto;
+}
+
+.second_display h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 50;
+    padding: 0px 20px;
+}
+
+
+.footer_mobile { 
+    background-color: #259DB7;
+    display: flex;
+}
+
+.logo_footer {
+    height: 10vh;
+    width: auto;
+    margin: 10px;
+}
+
+.footer_mobile img {
+    height: 8vh;
+    padding: 2px 20px;
+    margin: 5px;
+    display: flex;
+}
+
+
+
+.footer_desktop {
+    display: none;
+}
+
+
 
 .nav_around {
         display: flex;
         max-width: 100%;
         justify-content: stretch;
+        padding: 0px;
        
     }
 
   
-    #submit {
+   
+/* Buttons */
+
+    .cta_button { 
+        background-color: #259DB7;
+        border-radius: 15px;
+        font-family: "Raleway", Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        border: none;
+        padding: 10px 30px;
+        font-size: 0.8em;
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+    }
+    
+#shopnow {
+    font-size: 2em;
+    font-family: "Raleway", Arial, Helvetica, sans-serif ;
+    border: none;
+    padding: 10px 20px;
+    margin: auto;
+ }
+ 
+.cart {
+    margin: auto;
+    padding: 10px;
+}
+
+.send {
+    padding: 10px 30px;
+    font-size: 1em;
+}
+
+.payment {
+    padding: 10px 30px;
+    font-size: 1em;
+}
+
+body a {
+    color: #000000;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+ #submit {
         padding: 10px 40px;
         border: none;
         border-radius: 15px;
@@ -195,42 +221,6 @@ footer div {
         margin: 0px 0px 0px 0px;
     }
 
-
-.cta_button {
-    background-color: #259DB7;
-    border: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
-    border-radius: 15px;
-    margin: 20px auto;
-    padding: 10px;
-}
-
-.cart {
-    margin: auto;
-}
-
-.send {
-    padding: 10px 30px;
-    font-size: 1em;
-}
-
-.payment {
-    padding: 10px 30px;
-    font-size: 1em;
-}
-
-
-body a {
-    color: #000000;
-}
-
-button a {
-    text-decoration: none;
-    color: #fff;
-}
-  
 
 .products {
     background-color: #c3c3c3;
@@ -353,37 +343,22 @@ nav {
 /* CHECKOUT PAGE */
 
 .checkout_container img {
-    height: 80vh;
-    width: 500px;
+    height: 55vh;
+    width: 300px;
     padding: 20px;
     margin: 30px;
     margin-top: 80px;
     
 }
 
-.checkout_display div {
-    margin: 50px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
 .checkout_container section {
-   display: flex;
-   flex-direction: column;
-}
-
-.checkout_container {
-  display: flex;
-  justify-content: center;
-}
-
-.checkout_container p {
-    font-family: "Playfair Display", Arial, Helvetica, sans-serif
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
 
 
-
+/* CONTACT PAGE */
 .contact_page h1 {
     grid-area: span 2;
 }
@@ -425,3 +400,123 @@ nav {
 footer a {
     text-decoration: none;
 }
+
+
+@media screen and (min-width: 600px) {
+    nav {
+        display: block;
+        
+    }
+
+    header label {
+        display: none;
+    }
+
+    .nav { 
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #259DB7;
+        border: none;
+        border-radius: 0 0 0 15px;
+        text-align:center;
+        padding: 0px 20px;
+    }
+    
+nav ul {
+        padding: 0px; 
+        width:100%;
+        margin: 20px;
+        margin-bottom: 0px;
+    }
+
+.nav_home {
+    background-color: #fff;
+}
+    
+nav li {
+        display: inline-block; 
+        justify-content: space-between;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.5em;
+        max-width: 100%;
+    }
+
+.logo {
+        height: 70px;
+        width: auto;
+        margin: 30px;
+        position: relative;
+    }
+
+.logo_home {
+    height: 70vh;
+}
+
+.first_display img {
+    height: 50vh;
+}
+
+.second_display img {
+    height: 50vh;
+}
+
+
+
+.footer_mobile {
+    display: none;
+}
+
+.footer_desktop {
+        background-color: #259DB7;
+        display: flex;
+        justify-content: space-between;   
+        font-family: "Raleway", Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        padding: 10px 15px;
+        margin-top: 50px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+footer div {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+.social_media {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+
+
+.sm_logo {
+        height: 50px;  
+    }
+    
+    
+    .checkout_display div {
+        margin: 50px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .checkout_container section {
+       display: flex;
+       flex-direction: column;
+    }
+    
+    .checkout_container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .checkout_container p {
+        font-family: "Playfair Display", Arial, Helvetica, sans-serif
+    }
+  
+} 
