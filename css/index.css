@@ -39,11 +39,15 @@ nav {
 nav ul {
     padding: 0px;
     background-color: #259DB7;
+    list-style-type: none;
+    position: absolute;
+    left: 0px;
+    top: 2px;
 }
 
 nav ul li {
     text-align: left;
-    padding: 0px;
+    padding: 5px;
 }
 
     
@@ -222,7 +226,7 @@ button a {
         margin: 0px 0px 0px 0px;
     }
 
-
+/* PRODUCT PAGE */
 .products {
     background-color: #c3c3c3;
     width: 100%;
@@ -252,8 +256,8 @@ h1 {
     }
 
 .products_display {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .products_display div {
@@ -261,10 +265,6 @@ h1 {
     justify-content: space-between;
     margin: 20px 20px;
     
-}
-
-.last_one {
-    width: 50%;
 }
 
 
@@ -406,7 +406,7 @@ footer a {
         display: none;
     }
 
-    .nav { 
+.nav { 
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -418,10 +418,11 @@ footer a {
     }
     
 nav ul {
+        display: flex;
+        justify-content: space-around;
         padding: 0px; 
         width:100%;
-        margin: 20px;
-        margin-bottom: 0px;
+        margin-top: 20px;
     }
 
 .nav_home {
@@ -445,7 +446,13 @@ nav li {
     }
 
 .logo_home {
-    height: 70vh;
+    width: 100%;
+}
+
+figure {
+    max-width: 600px;
+    margin: 0px auto;
+
 }
 
 .first_display img {
@@ -491,6 +498,11 @@ footer div {
         height: 50px;  
     }
     
+
+    .products_display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     
     .checkout_display div {
         margin: 50px;
@@ -516,9 +528,7 @@ footer div {
     .contact_page h1 {
         grid-area: span 2;
     }
-    
-    
-    
+
     .item {
         text-align: left;
         align-items: center;
