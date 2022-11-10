@@ -279,9 +279,6 @@ footer {
 }
 
 
-
-
-
 .box {
     width: 300px;
     height: 5vh;
@@ -335,11 +332,10 @@ nav {
 /* CHECKOUT PAGE */
 
 .checkout_container img {
-    height: 55vh;
-    width: 300px;
+    width: 80%;
     padding: 20px;
     margin: 30px;
-    margin-top: 80px;
+    margin-top: ;
     
 }
 
@@ -349,6 +345,27 @@ nav {
     justify-content: center;
  }
 
+ .checkout_display p {
+    padding-top:30px;
+    padding-bottom: 20px;
+ }
+
+ .product_detail {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .product_detail p {
+    text-align: center;
+ }
+
+ .product_detail h1 {
+    font-size: 1.8em;
+ }
+
+ .price {
+    padding: 20px;
+ }
 
 /* CONTACT PAGE */
 
@@ -582,7 +599,14 @@ figure {
     }
     
     .checkout_container p {
-        font-family: "Playfair Display", Arial, Helvetica, sans-serif
+        font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+        margin: 0px auto;
+    }
+
+    .product_detail {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
     }
 
     .contact_page h1 {
