@@ -7,7 +7,6 @@
 
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    width: 100%;
     padding: 0px;
 }
 
@@ -64,7 +63,6 @@ nav ul a {
         background-size: 100%;
         background-position: fixed;
         background-repeat: no-repeat;
-        height:80vh;
         width: 100%;
         margin-top: 30px;
         }
@@ -89,6 +87,14 @@ header div {
     margin: 0px auto;
 }
 
+
+
+.left_side, .right_side {
+    align-self: center;
+}
+
+
+
 .nav_around {
     align-self: center;
 }
@@ -97,7 +103,6 @@ header div {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-
      }
 
 .first_display h1 {
@@ -133,19 +138,19 @@ header div {
 .footer_mobile { 
     background-color: #259DB7;
     display: flex;
+    flex-direction: row;
+    border-radius: 10px 10px 0 0;
     
 }
 
 .logo_footer {
-    height: 10vh;
-    width: auto;
-    margin: 10px;
+    size: auto;
 }
 
 .footer_mobile img {
     height: 8vh;
-    padding: 2px 20px;
-    margin: 5px;
+    padding: 2px 15px;
+    margin: auto;
     display: flex;
 }
 
@@ -172,11 +177,17 @@ header div {
         margin: 20px auto;
     }
     
-#shopnow {
-    font-size: 2em;
+.shopnow {
+    background-color: #259DB7;
+    font-size: 1.5em;
     font-family: "Raleway", Arial, Helvetica, sans-serif ;
+    border-radius: 10px;
     border: none;
-    padding: 10px 20px;
+    color: #fff;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
     margin: auto;
  }
  
@@ -186,8 +197,9 @@ header div {
 }
 
 .send {
-    padding: 10px 30px;
     font-size: 1em;
+    margin: 10px auto;
+    width: 20px;
 }
 
 .payment {
@@ -197,27 +209,27 @@ header div {
 
 body a {
     color: #000000;
+    text-decoration: none;
 }
 
-button a {
-    text-decoration: none;
-    color: #fff;
-}
+
   
- #submit {
-        padding: 10px 40px;
+ .submit {
         border: none;
         border-radius: 15px;
         margin: 0px 10px 0px 160px;
         font-size: 1em ;
         font-family: "Raleway";
+        background-color: #c3c3c3;
+        margin: 10px auto;
+        padding: 10px;
     }
     
-    #newsletter__email {
-        width: 350px;
-        height: 40px;
+.newsletter__email {
+        width: auto;
         font-size: 0.8em;
-        margin: 0px 0px 0px 0px;
+        margin: 5px 0px;
+        padding: 10px;
     }
 
 /* PRODUCT PAGE */
@@ -240,6 +252,7 @@ h1 {
 .products_display {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 100%;
 }
 .product {
     display:flex;
@@ -312,6 +325,10 @@ main p {
 
 nav {
     text-align: center;
+}
+
+.home_page {
+   width: auto;
 }
 
 
@@ -403,31 +420,41 @@ footer a {
 footer div {
         margin-left: 20px;
         margin-right: 20px;
+       
     }
 .social_media {
     display: flex;
     justify-content: space-between;
 }
 
-    .sm_logo {
+.sm_logo {
         height: 50px;  
     }
+
+    .shopnow {
+        font-size: 2em;
+    }
+        
 }
 
 
+
 @media screen and (min-width: 800px) {
-    nav {
-        display: block;
-        padding-bottom: 50px;
-        
-    }
 
     header label {
         display: none;
     }
+    nav {
+        display: block;
+        
+    }
+
+    .left_side,
+    .right_side {
+        display: none;
+    }
 
 .nav { 
-        width: 100%;
         display: flex;
         justify-content: space-between;
         background-color: #259DB7;
@@ -435,6 +462,7 @@ footer div {
         border-radius: 0 0 0 15px;
         text-align:center;
         padding: 0px 20px;
+        width: 100%;
     }
     
 nav ul {
@@ -455,14 +483,13 @@ nav li {
         padding: 10px;
         margin: 10px;
         font-size: 1.5em;
-        max-width: 100%;
+        
     }
 
-    .nav_around {
-        display: flex;
-        justify-content: space-between;
-        padding: 0px;
+    .shopnow {
+        font-size: 2em;
     }
+
 
 .logo {
         height: 70px;
@@ -483,6 +510,7 @@ figure {
     margin: 0px auto;
 
 }
+
 
 .first_display img {
     width: auto;
@@ -576,5 +604,10 @@ figure {
         margin: 50px;
        
     }
+    .newsletter__email {
+        width: 300px;
+    }
   
+
+
 } 
