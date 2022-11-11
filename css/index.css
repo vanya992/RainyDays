@@ -99,40 +99,6 @@ header div {
     align-self: center;
 }
 
-.first_display {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-     }
-
-.first_display h1 {
-    font-size: 2em;
-    font-weight: 50;
-    padding: 0px 10px;
-}
-
-.first_display img {
-    height: 30vh;
-    width: auto;
-}
-
-.second_display {
-    display: flex;
-    padding: 20px;
-    margin: 20px;
-}
-
-.second_display img {
-    height: 30vh;
-    width: auto;
-}
-
-.second_display h2 {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 50;
-    padding: 0px 20px;
-}
 
 
 .footer_mobile { 
@@ -325,7 +291,39 @@ nav {
 }
 
 .home_page {
-   width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.first_display {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+     }
+
+.first_display h1 {
+    font-size: 2em;
+    font-weight: 50;
+    padding: 0px 10px;
+}
+
+.home_page img {
+    width: 100%;
+}
+
+.second_display {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+.second_display h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 50;
+    padding: 0px 20px;
 }
 
 
@@ -530,11 +528,11 @@ figure {
 
 
 .first_display img {
-    width: auto;
+    width: 100%;
 }
 
 .second_display img {
-    width: auto;
+    width: 100%;
 }
 
 .second_display h2 {
