@@ -17,7 +17,7 @@ main {
     flex-grow: 1;
 }
 
-main a {
+input {
     text-decoration: none;
     color: #fff;
 }
