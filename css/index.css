@@ -8,7 +8,7 @@
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     min-height: 100vh;
-    margin: 2px;
+    margin:0px;
     display: flex;
     flex-direction:column;
 }
@@ -57,13 +57,15 @@ nav ul {
     padding: 0px;
     width: fit-content;
     list-style-type: none;
-    left: 10px;
+    left: 0px;
     top: 2px;
+    
 }
 
 nav ul li {
+    font-size: 1.3em;
     text-align: left;
-    padding: 5px;
+    padding: 10px;
 }
    
 nav ul a {
@@ -78,6 +80,13 @@ nav ul a {
     padding: 10px;
 }
 
+.position_nav {
+    position: absolute;
+}
+
+.nav_home {
+    position: absolute;
+}
 
 header div {
     display: flex;
@@ -147,9 +156,6 @@ header div {
 
 /* HOME PAGE */
 
-nav {
-    text-align: center;
-}
 
 .home_header  {
     margin: 0;
@@ -160,11 +166,17 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
 }
+
 .first_display {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-     }
+
+}
+
+.first_display img {
+    height: 100%;
+    max-width: 100%;
+    margin-top:20px;
+}
 
 .first_display h1 {
     font-size: 2em;
@@ -172,24 +184,9 @@ nav {
     padding: 0px 10px;
 }
 
+
 .home_page img {
     width: 100%;
-}
-
-.second_display {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 20px;
-}
-
-
-
-.second_display h2 {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 50;
-    padding: 0px 20px;
 }
 
    
@@ -428,9 +425,7 @@ footer a {
 
 
 @media (min-width: 550px) and (max-width:799px) {
-    .second_display h2 {
-        font-size: 1.8em;
-    }
+   
 
 
     .footer_mobile {
@@ -479,6 +474,10 @@ footer div {
    footer i {
         font-size: 1em;
     }
+
+   
+    
+
 }
 
 
@@ -496,7 +495,10 @@ footer div {
         
     }
 
-  
+  .position_nav {
+        position: sticky;
+  }
+
     .left_side,
     .right_side {
         display: none;
@@ -519,12 +521,18 @@ nav ul {
         justify-content: space-around;
         padding: 0px; 
         width:100%;
-        margin-top: 20px;
+        margin-top: 10px;
+        
     }
 
 .nav_home {
     background-color: #fff;
+
+    
    
+}
+.header_image {
+    margin-top: 60px;
 }
     
 nav li {
@@ -570,19 +578,6 @@ figure {
     max-width: 600px;
     margin: 0px auto;
 
-}
-
-
-.first_display img {
-    width: 100%;
-}
-
-.second_display img {
-    width: 100%;
-}
-
-.second_display h2 {
-    font-size: 2.5em;
 }
 
 i {
