@@ -361,13 +361,17 @@ main p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
  }
 
  .checkout_display p {
     padding-top:30px;
     padding-bottom: 20px;
  }
-
+.checkout_display div {
+    justify-content: center;
+    margin: auto;
+}
 
  .product_detail p {
     text-align: center;
