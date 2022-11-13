@@ -8,8 +8,8 @@
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     min-height: 100vh;
-    margin: 2px;
-    padding: 2px;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-direction:column;
 }
@@ -59,7 +59,7 @@ nav ul {
     width: fit-content;
     list-style-type: none;
     left: 0px;
-    top: 2px;
+    top: 5px;
     
 }
 
@@ -174,15 +174,15 @@ header div {
 }
 
 .first_display img {
-    height: 100%;
     max-width: 100%;
     margin-top:20px;
 }
 
 .first_display h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 50;
     padding: 0px 10px;
+    margin: auto;
 }
 
 
@@ -295,6 +295,8 @@ h1 {
 .product {
     display:flex;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .product_details {
@@ -478,7 +480,10 @@ footer div {
         font-size: 1em;
     }
 
-   
+   .first_display h1{
+    font-size: 2.5em;
+    margin: auto;
+   }
     
 
 }
@@ -611,6 +616,9 @@ i {
     }
 
 
+    .first_display h1{
+        font-size: 4em;
+       }
 
 .sm_logo {
         height: 50px;  
