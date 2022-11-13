@@ -134,6 +134,7 @@ header div {
     flex-direction: row;
     justify-content: space-evenly;
     border-radius: 10px 10px 0 0;
+    align-items: center;
     
 }
 
@@ -169,7 +170,8 @@ header div {
 
 .first_display {
     display: flex;
-
+    flex-direction: column;
+    margin: auto;
 }
 
 .first_display img {
@@ -182,11 +184,7 @@ header div {
     font-weight: 50;
     padding: 0px 10px;
     margin: auto;
-}
-
-
-.home_page img {
-    width: 100%;
+    margin-top: 20px;
 }
 
    
@@ -479,6 +477,10 @@ footer div {
         font-size: 1em;
     }
 
+    .first_display {
+        flex-direction: row;
+    }
+
    .first_display h1{
     font-size: 2.5em;
     margin: auto;
@@ -614,7 +616,9 @@ i {
        
     }
 
-
+    .first_display {
+        flex-direction: row;
+    }
     .first_display h1{
         font-size: 4em;
        }
