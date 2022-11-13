@@ -9,6 +9,7 @@ body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     min-height: 100vh;
     margin: 2px;
+    padding: 2px;
     display: flex;
     flex-direction:column;
 }
@@ -380,7 +381,7 @@ main p {
  }
 
  .price {
-    padding: 20px;
+    text-align: center;
  }
 
 /* CONTACT PAGE */
