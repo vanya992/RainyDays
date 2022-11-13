@@ -132,22 +132,21 @@ header div {
     background-color: #259DB7;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 10px 10px 0 0;
     
 }
 
+.mobile_footer_smlogo {
+    padding-top: 10px;
+    margin: auto;
+}
+
 .logo_footer {
     size: auto;
-}
-
-.footer_mobile img {
     height: 8vh;
-    padding: 2px 15px;
-    margin: auto;
-    display: flex;
+    padding-top: 3px;
 }
-
 
 
 .footer_desktop {
