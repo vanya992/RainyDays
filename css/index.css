@@ -78,9 +78,12 @@ nav ul a {
 
 .nav_around {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-self: center;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    background: #fff;
 }
 
 .position_nav {
@@ -269,6 +272,7 @@ body a {
 }
 .products {
     width: 100%;
+    padding-top: 90px;
 }
 
 
@@ -297,7 +301,7 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 2px 2px 2px 2px #ccc;
-    margin: 5px px;
+    margin: 5px;
     border-radius: 5px;
 }
 
