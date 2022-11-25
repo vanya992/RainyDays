@@ -248,7 +248,7 @@ header div {
 }
 
 body a {
-    color: #000000;
+    color: #000;
     text-decoration: none;
 }
 
@@ -315,6 +315,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
 }
+
 
 
 
