@@ -3,6 +3,9 @@
     src: url("../fonts/RacingSansOne-Regular.ttf") format("truetype");
 }
 
+:root {
+    --main-bg-color: #259DB7;
+}
 
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -15,6 +18,11 @@ body {
 
 main {
     flex-grow: 1;
+    padding-top: 120px;
+}
+
+.main_home {
+    padding-top: 0px;
 }
 
 input {
@@ -56,7 +64,7 @@ nav {
 
 
 nav ul {
-    background-color: #259DB7;
+    background-color: var(--main-bg-color);
     padding: 0px;
     width: fit-content;
     list-style-type: none;
@@ -134,7 +142,7 @@ header div {
 
 
 .footer_mobile { 
-    background-color: #259DB7;
+    background-color: var(--main-bg-color);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -196,7 +204,7 @@ header div {
 /* Buttons */
 
 .cta_button { 
-        background-color: #259DB7;
+        background-color: var(--main-bg-color);
         text-decoration: none;
         border-radius: 15px;
         font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -210,7 +218,7 @@ header div {
     }
     
 .shopnow {
-    background-color: #259DB7;
+    background-color: var(--main-bg-color);
     font-size: 1.5em;
     font-family: "Raleway", Arial, Helvetica, sans-serif ;
     border-radius: 10px;
@@ -244,8 +252,6 @@ body a {
     text-decoration: none;
 }
 
-
-  
  .submit {
         border: none;
         border-radius: 15px;
@@ -272,7 +278,6 @@ body a {
 }
 .products {
     width: 100%;
-    padding-top: 90px;
 }
 
 
@@ -301,7 +306,7 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 2px 2px 2px 2px #ccc;
-    margin: 5px;
+    margin: 0px;
     border-radius: 5px;
 }
 
@@ -395,6 +400,7 @@ main p {
 
 /* CONTACT PAGE */
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -436,6 +442,7 @@ footer a {
 
 
 
+
 @media (min-width: 550px) and (max-width:799px) {
    
 
@@ -444,14 +451,12 @@ footer a {
         display: none;
     }
 
-    .products_display {
-        display: grid;
-        grid-template-columns: 1fr;
+    .products_display { 
         align-self: center;
     }
 
 .footer_desktop {
-        background-color: #259DB7;
+        background-color: var(--main-bg-color);
         display: flex;
         justify-content: space-between;   
         font-family: "Raleway", Arial, Helvetica, sans-serif;
@@ -479,10 +484,6 @@ footer div {
         font-size: 2em;
     }
  
-.newsletter__email {
-      
-    }
-
    footer i {
         font-size: 1em;
     }
@@ -493,7 +494,6 @@ footer div {
 
    .first_display h1{
     font-size: 2.5em;
-    margin: auto;
    }
 
 
@@ -538,18 +538,14 @@ nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding: 0px; 
         width:100%;
         margin-top: 10px;
-        
     }
 
 .nav_home {
     background-color: #fff;
-
-    
-   
 }
+
 .header_image {
     margin-top: 60px;
 }
@@ -587,10 +583,8 @@ main {
     }
 
 .logo_home {
-    display: block;
     width: 100%;
     margin: 20px auto;
-    padding: 20px;
 }
 
 figure {
@@ -608,15 +602,13 @@ i {
 }
 
 .footer_desktop {
+    background-color: var(--main-bg-color);
     display: flex;
     justify-content: space-between;
     padding: 10px 15px;
     margin-top: 50px;
     border-radius: 15px 15px 0px 0px;
-    background-color: #259DB7;
 }
-
-
 
 .social_media {
         display: flex;
@@ -638,15 +630,17 @@ i {
     }
     /* Product page */
     .products {
-        background-color: #c3c3c3;
-        width: 100%;
+        background-color: #c3c3c3; 
         margin-top: 20px;
         padding-top: 20px;
     }
     .products_display {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 90%;
+    }
+
+    .product {
+        box-shadow: none;
     }
 
     footer section {
@@ -670,8 +664,7 @@ i {
     }
     
     .checkout_container section {
-       display: flex;
-       flex-direction: column;
+      
     }
     
     .checkout_container {
@@ -704,7 +697,6 @@ i {
     }
     
     .container {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin: 50px;
