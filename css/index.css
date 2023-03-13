@@ -146,7 +146,6 @@ header div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-radius: 10px 10px 0 0;
     align-items: center;
     
 }
@@ -172,8 +171,9 @@ header div {
 
 
 .home_header  {
-    margin: 0;
+    margin: 30px;
     padding-top: 10px;
+   
 }
 
 .home_page {
@@ -269,6 +269,7 @@ body a {
         font-size: 0.8em;
         margin: 5px 0px;
         padding: 10px;
+        color:#000;
     }
 
 /* PRODUCT PAGE */
@@ -434,8 +435,7 @@ main i {
 
 .about p {
     padding: 20px;
-    margin-left: 100px;
-    margin-right: 50px;
+    margin: 20px;
 }
 
 footer a {
@@ -465,7 +465,7 @@ footer a {
         font-size: 1em;
         padding: 10px 15px;
         margin-top: 50px;
-        border-radius: 15px 15px 0px 0px;
+      
     }
     
 footer div {
@@ -609,7 +609,6 @@ i {
     justify-content: space-between;
     padding: 10px 15px;
     margin-top: 50px;
-    border-radius: 15px 15px 0px 0px;
 }
 
 .social_media {
