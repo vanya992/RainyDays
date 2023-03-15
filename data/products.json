@@ -1,0 +1,53 @@
+{
+    "products": [
+{
+    "id": "001",
+    "name": "Carter",
+    "desription": "Wind/Winter Jacket",
+    "price": "1350kr",
+    "about": "Winter / Wind jacket made of resistible material, able to get you through all types of weather conditions."
+},
+{
+    "id": "002",
+    "name": "Stigma",
+    "desription": "Wind/Winter Jacket",
+    "price": "1300kr",
+    "about": "Perfect jacket for everyday wear, made of resistible materials, 80% recyclable."
+},
+{
+    "id": "003",
+    "name": "Merian",
+    "desription": "Wind/Winter Jacket",
+    "price": "1250kr",
+    "about": "Absolut must have under jacket, keeps you warm and dry."
+},
+{
+    "id": "004",
+    "name": "Scott",
+    "desription": "Wind/Winter Jacket",
+    "price": "1400kr",
+    "about": "Jacket that will make your outside activities best time ever spent."
+},
+{
+    "id": "005",
+    "name": "Marcos",
+    "desription": "Wind/Winter Jacket",
+    "price": "1350kr",
+    "about": "Most comfortable, warm and windproof jacket. Made of the finest materials."
+},
+{
+    "id": "006",
+    "name": "Grant",
+    "desription": "Wind/Winter Jacket",
+    "price": "1350kr",
+    "about": "Best in test // wind and water resistant."
+},
+{
+    "id": "007",
+    "name": "Bracket",
+    "desription": "Wind/Winter Jacket",
+    "price": "1350kr",
+    "about": "Under jacket made of wool, keeps you warm whole time."
+}
+    ]
+};
