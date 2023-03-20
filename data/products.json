@@ -3,51 +3,58 @@
 {
     "id": "001",
     "name": "Carter",
-    "desription": "Wind/Winter Jacket",
+    "description": "Wind/Winter Jacket",
     "price": "1350kr",
-    "about": "Winter / Wind jacket made of resistible material, able to get you through all types of weather conditions."
+    "about": "Winter / Wind jacket made of resistible material, able to get you through all types of weather conditions.",
+    "image": "/images/products/RainyDays_Jacket1.png"
 },
 {
     "id": "002",
     "name": "Stigma",
-    "desription": "Wind/Winter Jacket",
+    "description": "Wind/Winter Jacket",
     "price": "1300kr",
-    "about": "Perfect jacket for everyday wear, made of resistible materials, 80% recyclable."
+    "about": "Perfect jacket for everyday wear, made of resistible materials, 80% recyclable.",
+    "image": "/images/products/RainyDays_Jacket2.png"
 },
 {
     "id": "003",
     "name": "Merian",
-    "desription": "Wind/Winter Jacket",
+    "description": "Wind/Winter Jacket",
     "price": "1250kr",
-    "about": "Absolut must have under jacket, keeps you warm and dry."
+    "about": "Absolut must have under jacket, keeps you warm and dry.",
+    "image": "/images/products/RainyDays_Jacket3.png"
 },
 {
     "id": "004",
     "name": "Scott",
-    "desription": "Wind/Winter Jacket",
+    "description": "Wind/Winter Jacket",
     "price": "1400kr",
-    "about": "Jacket that will make your outside activities best time ever spent."
+    "about": "Jacket that will make your outside activities best time ever spent.",
+    "image": "/images/products/RainyDays_Jacket4.png"
 },
 {
     "id": "005",
     "name": "Marcos",
-    "desription": "Wind/Winter Jacket",
+    "description": "Wind/Winter Jacket",
     "price": "1350kr",
-    "about": "Most comfortable, warm and windproof jacket. Made of the finest materials."
+    "about": "Most comfortable, warm and windproof jacket. Made of the finest materials.",
+    "image": "/images/products/RainyDays_Jacket5.png"
 },
 {
     "id": "006",
     "name": "Grant",
-    "desription": "Wind/Winter Jacket",
+    "description": "Wind/Winter Jacket",
     "price": "1350kr",
-    "about": "Best in test // wind and water resistant."
+    "about": "Best in test // wind and water resistant.",
+    "image": "/images/products/RainyDays_Jacket6.png"
 },
 {
     "id": "007",
     "name": "Bracket",
-    "desription": "Wind/Winter Jacket",
+    "description": "Wind/Winter Jacket",
     "price": "1350kr",
-    "about": "Under jacket made of wool, keeps you warm whole time."
+    "about": "Under jacket made of wool, keeps you warm whole time.",
+    "image": "/images/products/RainyDays_Jacket7.png"
 }
     ]
 };

@@ -27,7 +27,7 @@ main {
 
 input {
     text-decoration: none;
-    color: #fff;
+    font-size: 0.8em;
 }
 
 header i {
@@ -319,9 +319,6 @@ h1 {
 }
 
 
-
-
-
 .box {
     width: 300px;
     height: 5vh;
@@ -336,9 +333,9 @@ h1 {
 
 .box,
 .box_message {
-    border: 1px solid;
+    box-shadow: none;
     border-radius: 4px;
-    background-color: #D9D9D9;
+    background-color: #F2F2F2;
 }
 
 main p {
@@ -442,7 +439,9 @@ footer a {
     text-decoration: none;
 }
 
-
+.error {
+    display: none;
+}
 
 
 @media (min-width: 550px) and (max-width:799px) {
@@ -479,7 +478,7 @@ footer div {
 }
 
 .sm_logo {
-        height: 30px;  
+     height: 30px;  
     }
 
 .shopnow {
