@@ -1,30 +1,21 @@
 const mail = document.getElementById("email");
 
-const message = document.querySelector("error-message");
+const messageContainer = document.querySelector("message")
+
+const success = document.querySelector("success")
 
 const emailConfirm = document.querySelector("email_form")
 
-function validateEmail(mail) {
-    const regEx = /\S+@\S+\.\S+/;
-    const emailMatches = regEx.test(mail);
-    return emailMatches;
-};
 
-
-
-function validateForm(event) {
-
-    event.preventDefault();
+function validateSubscription() {
 
     let isInputValid = true;
 
     if (validateEmail(mail.value) === true) {
-        message.style.fontSize = "5px"
-        message.style.border = "5px solid green";
-        message.innerHTML = "You are succesfully subscribed to our newsletter.";
+        mail.style.border = "2px solid green";
     } else {
-        mail.style.border = "5px solid red";
-        message.innerHTML = "Please, enter a valid email.";
+        mail.style.border = "2px solid red";
+        
         isInputValid = false;
     }
     if (isInputValid === true) {
@@ -32,9 +23,17 @@ function validateForm(event) {
     } else {
         console.log("failure")
 }
-
 }
-validateForm()
+
+
+function validateEmail(mail) {
+    const regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const emailMatches = regEx.test(mail);
+    return emailMatches;
+};
+
+
+
 
 
 

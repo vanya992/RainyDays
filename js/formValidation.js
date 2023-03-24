@@ -8,7 +8,7 @@ const errorMessage = document.getElementById("error-message");
 const success = document.getElementById("success");
 
 
-function validateForm() {
+function validateForm(event) {
     event.preventDefault();
 
     let showSuccessMsg = true;
@@ -54,8 +54,9 @@ function checkLength(value, len) {
 }
 
 
-function validateEmail(email) {
-    const regEx = /\S+@\S+\.\S+/;
-    const emailMatches = regEx.test(email);
+function validateEmail(mail) {
+    const regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const emailMatches = regEx.test(mail);
     return emailMatches;
 };
+
