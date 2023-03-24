@@ -1,5 +1,4 @@
-{
-    "products": [
+[
 {
     "id": "001",
     "name": "Carter",
@@ -57,4 +56,3 @@
     "image": "/images/products/RainyDays_Jacket7.png"
 }
     ]
-};

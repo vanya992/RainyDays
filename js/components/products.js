@@ -3,19 +3,19 @@ const displayContainer = document.querySelector("products_display");
 
 let http = new XMLHttpRequest();
 
-http.open("get", "/data/products.json", true);
+http.open("get", "../data/products.json", true);
 
 http.send();
 
-http.onload = function () {
+http.onload = function (data) {
     if (this.readyState === 4 && this.status === 200) {
         let products = JSON.parse(this.responseText)
-        display = "";
+        output = "";
         
         console.log(products);
 
         for(let item of products) {
-            display += `
+            output += `
                         <div class="products_display" >
                         <a href="${item.id}" aria-label="jacket"><div class="product">
                         <figure> <img src="${item.image}" alt="Product jacket" class="products_image">
@@ -28,10 +28,9 @@ http.onload = function () {
                         </div>`
         }
 
-        displayContainer.innerHTML = display;
+        displayContainer.innerHTML += output;
     }
 }
-
 
 
 
