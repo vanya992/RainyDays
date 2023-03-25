@@ -504,7 +504,7 @@ footer div {
 
 @media screen and (min-width: 800px) {
 
-   header .fa-bars {
+   header .fa-solid {
     display: none;
    }
 
@@ -544,6 +544,7 @@ nav ul {
         justify-content: space-around;
         width:100%;
         margin-top: 10px;
+        top: 5px;
     }
 
 .nav_home {
