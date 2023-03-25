@@ -512,7 +512,7 @@ footer div {
     nav {
         display: block;
         font-family: "Playfair Display", Arial, Helvetica, sans-serif;
-        
+    
     }
 nav a:hover {
     font-size: 1.5em;
@@ -563,6 +563,10 @@ nav li {
         font-size: 1.5em;
         
     }
+
+header {
+    margin: 0px;
+}
 
 
 header div {
