@@ -15,17 +15,16 @@ http.onload = function (data) {
         console.log(products);
 
         for (let item of products) {
-            output += `
-                        <div class="products_display" >
+            output += `<div class="product_display">
                         <a href="${item.name}.html" aria-label="jacket"><div class="product">
                         <figure> <img src="${item.image}" alt="Product jacket" class="products_image">
-                        </figure></div>
+                        </figure>
                         <div class="product_details">
                         <h2>${item.name}</h2>
                         <h3>${item.description}</h3>
                         <p>${item.price}</p>
                         <input type="button" value="View more" class="cta_button"></a>
-                        </div></div>`
+                        </div></div></div>`
         }
 
         displayContainer.innerHTML += output;
