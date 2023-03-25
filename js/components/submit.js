@@ -1,10 +1,10 @@
-const mail = document.getElementById("email");
+const mail = document.querySelector(".email");
 
-const messageContainer = document.querySelector("message")
+const messageContainer = document.querySelector(".message")
 
-const success = document.querySelector("success")
+const success = document.querySelector(".success")
 
-const emailConfirm = document.querySelector("email_form")
+const emailConfirm = document.querySelector(".email_form")
 
 
 function validateSubscription() {
@@ -13,9 +13,12 @@ function validateSubscription() {
 
     if (validateEmail(mail.value) === true) {
         mail.style.border = "2px solid green";
+        success.innerHTML = "You are now subscribed to our newsletter.";
+        messageContainer.innerHTML = "";
     } else {
         mail.style.border = "2px solid red";
-        
+        success.innerHTML = "";
+        messageContainer.innerHTML = "Please enter a valid e-mail.";
         isInputValid = false;
     }
     if (isInputValid === true) {

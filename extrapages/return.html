@@ -81,10 +81,11 @@
             <p>Find us on social media</p>
             <p class="social_media"> <a href="https://www.instagram.com"> <img src="/images/instagram/Instagram.png" alt="instagram logo" class="sm_logo"></a><a href="https://www.facebook.com" ><img src="/images/facebook/facebook.png" alt="facebook logo" class="sm_logo"></a><a href="https://www.snapchat.com"><img src="/images/snapchat/Snapchat.png" alt="snapchat Logo" class="sm_logo"></a></p>
             <p>Sign up for newsletter</p>
-            <input type="text" name="email" aria-label="email" class="newsletter__email" />
-            <p><a href="/extrapages/submited.html" class="submit">Submit</a></p>
-          </div>
-        </section>
-        </footer>
+            <form class="email_form">
+          <input id="email" type="text" name="email" placeholder="email" aria-label="e-mail" class="newsletter__email email" />
+          <button type="button" onclick="validateSubscription()" class="submit"> Submit </button><div class="message"></div><div class="success"></div></form></div>
+      </section>
+      </footer>
+      <script src="../js/components/submit.js"></script>
     </body>
     </html>

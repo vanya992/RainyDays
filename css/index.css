@@ -200,7 +200,6 @@ header div {
     margin-top: 20px;
 }
 
-   
 /* Buttons */
 
 .cta_button { 
@@ -300,6 +299,7 @@ h1 {
 .products_display {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
     width: 100%;
 }
 .product {
@@ -504,7 +504,7 @@ footer div {
 
 @media screen and (min-width: 800px) {
 
-   header .fa-solid {
+   header .fa-bars {
     display: none;
    }
 
@@ -514,6 +514,9 @@ footer div {
         font-family: "Playfair Display", Arial, Helvetica, sans-serif;
         
     }
+nav a:hover {
+    font-size: 1.5em;
+}
 
   .position_nav {
         position: sticky;
