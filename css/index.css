@@ -418,7 +418,13 @@ main i {
     text-align: center;
 }
 
-
+.error {
+    background-color: red;
+    color: white;
+    padding: 0 10px;
+    margin: 2px 0px;
+    
+}
 
 .succes p {
     padding: 20px;
