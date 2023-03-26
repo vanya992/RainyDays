@@ -423,7 +423,15 @@ main i {
     color: white;
     padding: 0 10px;
     margin: 2px 0px;
-    
+    border-radius: 2px;
+}
+
+#success {
+    background-color: green;
+    color: white;
+    padding: 2px 10px;
+    margin: 2px 0px;
+    border-radius: 2px;
 }
 
 .succes p {
